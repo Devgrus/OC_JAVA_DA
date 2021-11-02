@@ -21,7 +21,14 @@ public class ReadSymptomDataFromFile implements ISymptomReader {
 	public ReadSymptomDataFromFile (String filepath) {
 		this.filepath = filepath;
 	}
-	
+
+	/**
+	 * If no data is available, return an empty List
+	 * Read a file using IO Stream like BufferedReader
+	 * Each line of file, add symptom's name in ArrayList
+	 *
+	 * @return a raw listing of all Symptoms obtained from a data source, duplicates are possible/probable
+	 */
 	@Override
 	public List<String> getSymptoms() {
 		ArrayList<String> result = new ArrayList<String>();

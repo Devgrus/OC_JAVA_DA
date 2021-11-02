@@ -1,7 +1,7 @@
 package com.hemebiotech.analytics;
 
 /**
- * Write data of symptoms from a list of string (List<string>)
+ * Write data of symptoms from a list of string
  * With this data, it needs to create a file (ex: result.out)
  * This file has :
  *     - every symptom in a list of string
@@ -12,7 +12,7 @@ package com.hemebiotech.analytics;
  */
 public interface ISymptomWriter {
     /**
-     * Create file
+     * Create file using IO Stream like PrintWrtier, FileWriter etc...
      */
     void createFile();
 }

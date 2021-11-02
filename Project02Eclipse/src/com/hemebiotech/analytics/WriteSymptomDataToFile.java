@@ -24,6 +24,12 @@ public class WriteSymptomDataToFile implements ISymptomWriter {
         this.filename = filename;
     }
 
+    /**
+     * Get TreeMap from sortSymptom
+     * Create a file using PrintWriter
+     * In this file, each line contain one key(symptom) and one value(count occurrences)
+     * (ex: headache=3)
+     */
     @Override
     public void createFile() {
         TreeMap<String, Integer> map = sortSymptom(); // Get TreeMap from sortSymptom
@@ -39,6 +45,8 @@ public class WriteSymptomDataToFile implements ISymptomWriter {
     }
 
     /**
+     * Create a TreeMap using List<String> symptoms.
+     * Treemap sort by key (alphabetically)
      *
      * @return TreeMap<String, Integer> (key = symptom, value = count occurrences of a word)
      */

@@ -8,9 +8,10 @@ import java.util.List;
  */
 public class AnalyticsCounter {
 	/**
+	 * Parameters are not mandatory
+	 * Read a file using ReadSymptomDataFromFile and create a file using WriteSymptomDataToFile
 	 *
-	 * @param args is a string array of files' paths. This is not mandatory but if you use this parameter,
-	 * args[0] should be an input file path and args[1] should be an output file path.
+	 * @param args is a string array of files' paths. args[0] should be an input file path and args[1] should be an output file path.
 	 *
 	 */
 	public static void main(String args[]) {
